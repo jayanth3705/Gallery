@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="Album.css" />
+  </head>
+  <body>
+    <!-- Gallery Open Button -->
+    <button class="gallery-button" onclick="openGallery()">
+      <img src="image1.webp" alt="Open Gallery" />
+    </button>
+
+    <!-- Gallery Modal -->
+    <div class="gallery-modal" id="galleryModal">
+      <button class="close" onclick="closeGallery()">&times;</button>
+      <div class="slider-container">
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <div class="slider">
+          <img src="image2.webp" class="slide active" alt="Image 1" />
+          <img src="image3.webp" class="slide" alt="Image 2" />
+          <img src="image4.webp" class="slide" alt="Image 3" />
+          <img src="images5.jpg" class="slide" alt="Image 3" />
+        </div>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+      </div>
+    </div>
+
+    <script src="Album.js"></script>
+  </body>
+</html>
